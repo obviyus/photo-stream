@@ -4,18 +4,20 @@
 
 Photo stream is a simpler home for your photos initially created by [@maxvoltar](https://github.com/maxvoltar/photo-stream) and now maintained by [@waschinski](https://github.com/waschinski) and [friends](#credits). Easy to use, self hosted, no tracking, just photos.
 
-- [Examples](#examples)
-- [Features](#features)
-- [Why?](#why)
-- [How to Install](#how-to-install)
+- [Photo Stream](#photo-stream)
+  - [Examples](#examples)
+  - [Features](#features)
+  - [Why?](#why)
+  - [How to install](#how-to-install)
     - [Using docker](#using-docker)
     - [Manually](#manually)
-- [How to use](#how-to-use)
-- [Customize](#customize)
+  - [How to use](#how-to-use)
+    - [Automating the build & upload with rsync or lftp](#automating-the-build--upload-with-rsync-or-lftp)
+  - [Customize](#customize)
     - [Basics](#basics)
     - [Advanced](#advanced)
-- [Credits](#credits)
-- [Known issues](#known-issues)
+  - [Credits](#credits)
+  - [Known issues](#known-issues)
 
 ## Examples
 
