@@ -13,26 +13,14 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: Ayaan's Gallery
-email: hi@obviy.us
-author:
-  name: Ayaan Zaidi
-  email: hi@obviy.us #optional
-  website: https://obviy.us
-description: >- # this means to ignore newlines until "baseurl:"
-  @obviyus' minimalistic, self-hosted photo stream.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://gallery.obviy.us/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 0bviyus
-github_username: obviyus
-
+# These are used to personalize your new site and can be found in the .env file.
+# If you look in the HTML files, you will see them accessed via {{ site.env.TITLE }}, 
+# {{ site.env.EMAIL }}, and so on. You can create any custom variable you would like,
+# and they will be accessible in the templates via {{ site.env.MYVARIABLE }}.
+#
 # Build settings
 plugins:
+  - jekyll-dotenv
   - jekyll-exif-data
 
 image_processing:
@@ -74,3 +62,4 @@ image_processing:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude: [Dockerfile, LICENSE]
